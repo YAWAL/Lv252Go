@@ -11,6 +11,7 @@ func WriteTask()  {
 }
 
 //answer for task 243а page 104
+//TODO refactor this -> add return type!!!
 func SearchOneRoot(n int)  {
 	var x, y int
 	rootCounter := 0
@@ -20,9 +21,6 @@ func SearchOneRoot(n int)  {
 				rootCounter++
 				fmt.Println("Task a -> Pair of natural numbers for n =" , n, "when x^2 + y^2 = n : x =", x, " y =", y)
 			}
-			if rootCounter > 1 {
-				break
-			}
 		}
 	}
 	if rootCounter == 0{
@@ -31,6 +29,7 @@ func SearchOneRoot(n int)  {
 }
 
 //answer for task 243б page 104
+//TODO refactor this -> add return type!!!
 func SearchAllRoots(n int)  {
 	var x, y int
 	rootCounter := 0
