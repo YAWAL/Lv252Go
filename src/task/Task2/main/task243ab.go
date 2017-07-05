@@ -31,7 +31,7 @@ func SearchOneRoot(n int)  {
 }
 
 //answer for task 243б page 104
-func searchAllRoots(n int)  {
+func SearchAllRoots(n int)  {
 	var x, y int
 	rootCounter := 0
 	for x = 1; x < n; x ++ {
@@ -52,6 +52,6 @@ func main()  {
 		fmt.Println("Please, enter n : ")
 		fmt.Scanln(&n)
 		SearchOneRoot(n)
-		searchAllRoots(n)
+		SearchAllRoots(n)
 	}
 }
