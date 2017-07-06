@@ -39,16 +39,17 @@ func SearchOneRootBool(n int) bool{
 				break
 			}
 		}
-		return true
 	}
 	if rootCounter == 0{
 		fmt.Println("there is no root for n =", n)
+		return false
+
 	}
-	return false
+	return true
 }
 
 func main()  {
-	fmt.Println(SearchOneRootBool(3))
+	fmt.Println(SearchOneRootBool(57677))
 	//fmt.Println(SearchOneRootInt(57677))
 
 }
