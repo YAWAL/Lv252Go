@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//this function output to display text with task 243 on page 104
 func WriteTask()  {
 	fmt.Println("Дано натуральне число n. \n" +
 		"Чи можна представити його у вигляді суми двох квадратів натуральних чисел? \n" +
