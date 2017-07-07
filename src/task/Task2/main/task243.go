@@ -33,6 +33,8 @@ func SearchOneRoot(n int) bool{
 	return true
 }
 
+//this function search all roots of equition n = x^2 + y^2 , when x >= y
+//function accept int value of n and return bool value
 func SearchAllRoots(n int) bool {
 	var x, y int//counters for loops
 	rootCounter := 0
