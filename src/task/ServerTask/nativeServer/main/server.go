@@ -7,10 +7,10 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", handler)//Каждый запрос вызывает обработчик
+	http.HandleFunc("/", handler)//
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
-// Обработчик возвращает компонент пути из URL запроса,
+//return text after / in URL Path
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "{\n \"name\":%q \n}", r.URL.Path) //URL.Path =
+	fmt.Fprintf(w, "{\n \"name\":%q \n}", r.URL.Path)
 }
