@@ -12,6 +12,6 @@ func main() {
 }
 //return text after / in URL Path
 func handler(w http.ResponseWriter, r *http.Request) {
-	//r.URL.Path[1:] - means all path, except first char, wich in this case is "/"
+	//r.URL.Path[1:] - means all path, except first char, which in this case is "/"
 	fmt.Fprintf(w, "{\n \"name\":%q \n}", r.URL.Path[1:])
 }
